@@ -1,0 +1,725 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* -----------------------------------ESTRUCTURA----------------------------------------------- */
+.contenedor{
+    display: grid;
+    grid-template-areas: "box1 box2" "box3 box3" "box4 box4";
+    width: 100%;
+    height: 698px;
+    grid-template-rows: 50px auto 20px;
+    grid-template-columns: auto;
+}
+
+.box1{
+    grid-area: box1;
+    background:#ACA885;
+
+}
+
+.box2{
+    grid-area: box2;
+    background:#ACA885;
+    /* height: 300px; */
+    
+}
+
+.box3{
+    grid-area: box3;
+}
+
+.box4{
+    grid-area: box4;
+    
+}
+/* --------------------------------HEADER--------------------------------------------------- */
+.marcar{
+    color: #9a7352;
+}
+
+.header{
+    display: flex; 
+    background-color: #ACA885;
+    width: 100%;
+    height: 50px;
+} 
+
+.logo{
+    width: 100%;
+    height: 100%;
+
+}
+
+.logo p{
+    width: 100%;
+    height: 100%;
+    color:#f6f1f0;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    margin-left: 20px;
+    text-decoration: none;
+    
+}
+
+.logo span{ 
+    width: 100%;
+    height: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: #9a7352;
+    float:initial;
+    text-decoration: none;
+    
+}
+
+
+.barra {
+    grid-area: box2;
+    float: right;
+    
+}
+
+.barra nav ul li{
+    list-style: none;
+    display: inline-block;
+    height: 100%;
+    justify-content: space-between;
+    margin-right: 10px;
+    padding: 10px 0;
+}
+
+.barra nav ul a{
+    text-decoration: none;
+    color:rgb(248, 248, 248);
+    font-size: 20px;
+    font-style: italic;
+}
+
+.barra nav ul a:hover{
+color: #9a7352;
+}
+
+/* --------------------------------INDEX--------------------------------------------------- */
+.contenedorBanner{
+    width: 100%;
+    height: 40vh;
+    background-color:#f6f1f0;
+    display: grid;
+    grid-template-columns: none;
+}
+
+.tituloBanner{
+    color: #626C66;
+    font-size: 60px;
+    font-family: cursive;
+    grid-template-columns:none;
+    align-self:center;
+    justify-self:center;
+}
+
+.textoBanner{
+    color: #918B76;
+    font-size: 25px;
+    font-family: cursive;
+    width: 300px;
+    grid-template-columns: 1/2;
+    grid-template-rows: auto;
+    align-self: flex-end;
+    justify-self: center;
+    text-align: center;
+    
+    
+}
+.tituloPrincipal h1{
+display: grid;
+grid-template-columns: none;
+color: #243e3d;
+font-size: 40px;
+font-family:cursive;
+text-align: center;
+text-shadow: 2px 4px 10px #9a7352;
+}
+
+.bonotesMediosDePago button{
+    color: #626C66;
+    background-color:#f6f1f0 ;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;    
+    float: left;
+}
+
+h2{
+    font-size: 20px;
+    font-family: cursive;
+    color: #9a7352;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.galeria{
+    height: 600px;
+    width: 100%;
+    background-color: #ACA885;
+    display: grid;
+    padding: 10px;
+    gap: 5px;
+}
+.img{
+    background-color: #9a7352;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 0 5px #9a7352;
+
+}
+.img1{
+    background-image:url(../img/galeria-index/img1.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img2{
+    background-image: url(../img/galeria-index/img2.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+
+.img3{
+background-image: url(../img/galeria-index/img3.jpeg);
+background-position: center;
+background-size: cover;
+}
+
+.img4{
+background-image: url(../img/galeria-index/img4.jpeg);
+background-position: center;
+background-size: cover;
+}
+
+.img5{
+background-image: url(../img/galeria-index/img5.jpeg);
+background-position: center;
+background-size: cover;
+}
+
+.img6{
+background-image: url(../img/galeria-index/img6.jpeg);
+background-position: center;
+background-size: cover;
+}
+
+.pasoPedido{
+display: grid;
+grid-template-columns: none;
+}
+.pasoPedido ol li{
+    color: #243e3d;
+}
+
+.cajaMediosDePago{
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+}
+
+.bonotesMediosDePago{
+    justify-self: center;
+    
+}
+
+.bonotesMediosDePago button:hover {
+    background-color: #9a7352 ;
+}
+
+.cajaFormulario{
+border-radius: 5px;
+background-color:#ccc;
+padding: 10px;
+margin: 100px;
+}
+
+input[type=password] {
+    border: 2px solid #626C66;
+    border-radius: 4px;
+    background-color: #f6f1f0;
+    color: #9a7352;
+    font-size: 15px;
+}
+select{
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f6f1f0;
+    font-size: 15px;
+}
+
+input[type=text],input[type=number],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f1f0;
+    color: #9a7352;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color:#243e3d;
+}
+
+
+.consulta{
+    color: #243e3d;
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+}
+
+h3{
+    margin: 10px 0 30px 0;
+    text-align: center;
+    color: #9a7352;
+    background-color: #243e3d;  
+}
+
+
+/* -----------------------------------------PRODUCTOS---------------------------------------------------------- */
+.tituloRealizarPedido{
+    color: #243e3d;
+    font-size: 20px;
+    font-family:cursive;
+    text-shadow: 2px 4px 10px #9a7352;
+    text-align: center;
+}
+
+.listaRealizarPedido{
+    margin-left: 20px;
+    color: #f6f1f0;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+
+.iconoWp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+footer{
+height:100px;
+width: 100%;
+background-color: #ACA885;
+color:rgb(248, 248, 248);
+font-size: 20px;
+text-align: center;
+padding-top: 20px;
+}
+
+footer p{
+    text-align: left;
+}
+
+.derechos{
+    background-color:#626C66;
+    /* width: 100%; */
+    height: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 0px;
+}
+/* --------------------------------NOSOTROS--------------------------------------------------- */
+.contenedorNos{
+    width: 100%;
+    height: 40vh;
+    background-color:#9a7352;
+    display: grid;
+    grid-template-columns: none;
+}
+.contenedorNos h1{
+    color: #626C66;
+    font-size: 60px;
+    font-family: cursive;
+    grid-template-columns:none;
+    align-self:center;
+    justify-self:center;
+
+}
+
+.contenedorNos h2{
+    color: #f6f1f0;
+    font-size: 25px;
+    font-family: cursive;
+    width: 500px;
+    grid-template-columns: 1/2;
+    grid-template-rows: auto;
+    align-self: flex-start;
+    justify-self: end;
+    
+
+}
+
+
+.contenedorNos h1 span{
+    color:#243e3d;
+    font-size:30px;
+    font-family:serif;
+    position: absolute;
+    top: 50px;
+    
+}
+.tituloNosotros{
+color: #243e3d;
+font-size: 20px;
+font-family:cursive;
+text-shadow: 2px 4px 10px #9a7352;
+text-align: center;
+}
+.subtituloNosotros{
+    color: #243e3d;
+    font-size: 20px;
+    font-family:cursive;
+    text-shadow: 2px 4px 10px #9a7352;
+    
+}
+.listaNosotros{
+    margin-left: 50px;
+}
+
+.textoNosotros{
+    margin-left: 5px;
+}
+
+.tituloProductos{
+color: #243e3d;
+font-size: 20px;
+font-family:cursive;
+text-shadow: 2px 4px 10px #9a7352;
+text-align: center;
+}
+
+.subtituloProductos{
+    font-size: 20px;
+    font-family: cursive;
+    color: #9a7352;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration:underline;
+}
+
+.imgTarjetas{
+    height: 40px;
+    padding-left: 400px;
+    
+}
+/* --------------------------------CONTACTO-------------------------------------------------- */
+.tituloContacto{
+    color: #243e3d;
+    font-size: 30px;
+    font-family:cursive;
+    text-shadow: 2px 4px 10px #9a7352;
+    text-align: center;
+    margin-left: 450px;
+}
+
+.pContacto{
+    font-family: cursive;
+    text-align:justify;
+    font-weight: bold;
+    color: #9a7352;
+    margin-left: 450px;
+}
+
+.subtituloConsultanos{
+    color: #243e3d;
+    font-size: 30px;
+    font-family:cursive;
+    text-shadow: 2px 4px 10px #9a7352;
+    text-align: center;
+    margin-left:450px;
+}
+.tituloIngresar{
+    color: #243e3d;
+    font-size: 30px;
+    font-family:cursive;
+    text-shadow: 2px 4px 10px #9a7352;
+    text-align: center;
+}
+
+.textoIngresar{
+    font-family: cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #9a7352;
+
+}
+
+.subtituloIniciarSesion{
+    font-size: 20px;
+    font-family: cursive;
+    color: #9a7352; 
+    text-transform: capitalize;
+    padding-left: 35px;
+    
+}
+
+.formularioIngresar{
+padding-left: 550px;
+}
+
+.textoRegistrar{
+    font-family: cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #9a7352;
+
+}
+
+.subtituloRegistrar{
+    font-size: 20px;
+    font-family: cursive;
+    color: #9a7352; 
+    text-transform: capitalize; 
+    padding-left: 35px;
+}
+/* -----------------------------------RESPONSIVE GALERIA-------------------------------------------------- */
+    .img1{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    
+    .img2{
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+    
+    .img3{
+    grid-column: 3/5;
+    grid-row: 1/2;  
+    }
+    
+    .img4{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    }
+    
+    .img5{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    }
+    
+    .img6{
+    grid-column: 3/5;
+    grid-row: 2/4;
+    }
+
+/* ---------------------------------------RESPONSE INDEX---------------------------------------------------- */
+@media (max-width: 785px) {
+.contenedor {
+    grid-template-columns: 20% auto;
+    grid-template-rows: 50px auto 40px;
+    grid-template-areas: "box1 box1" "box2 box3" "box4 box4";
+    background-color: #f6f1f0;
+}
+
+.logo p{
+text-align: center;
+}
+.barra nav ul a:hover{
+    color: #9a7352;
+    }
+
+.box2{
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.contenedorBanner{
+grid-template-columns: none;
+grid-template-rows: none;
+}
+
+.tituloBanner{
+    justify-self: center;
+    font-size: 50px ;
+}
+.textoBanner{
+justify-self: center;
+font-size: 25px;
+}
+
+.tituloPrincipal h1{
+    justify-self: center;
+    align-self: end;
+    font-size: 20px;
+}
+.galeria{
+    height: 300px;
+    width: 100%;
+    justify-self:center;
+}
+
+.img1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.img2{
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.img3{
+grid-column: 3/5;
+grid-row: 1/2;  
+}
+
+.img4{
+grid-column: 1/2;
+grid-row: 3/4;
+}
+
+.img5{
+grid-column: 2/3;
+grid-row: 3/4;
+}
+
+.img6{
+grid-column: 3/5;
+grid-row: 2/4;
+}
+
+.cajaMediosDePago{
+grid-template-columns: 50% 50%;
+grid-template-rows: 50% 50%;
+}
+
+.bonotesMediosDePago{
+    justify-self: center;
+}
+}
+/* ------------------------------------------------------------------------------------------------------------ */
+@media(max-width: 360px){
+    .contenedor {
+        grid-template-columns: 20% auto;
+        grid-template-rows: 50px 50px    auto 40px;
+        grid-template-areas: "box1 box1" "box2 box2" "box3 box3" "box4 box4";
+        background-color: #f6f1f0;
+    }
+    h2{
+        text-align: center;
+    }
+    .logo p{
+        text-align: center;
+        }
+    .barra nav ul a:hover{
+    color: #9a7352;
+        }
+
+    .box2{
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 5px;
+    }
+    
+    .contenedorBanner{
+    grid-template-columns: none;
+    grid-template-rows: 100px 100px;
+    }
+
+    .tituloBanner{
+        justify-content: center;
+        justify-self: center;
+        text-align: center;
+        font-size: 30px ;
+    }
+    .textoBanner{
+        color: #918B76;
+        font-size: 25px;
+        font-family: cursive;
+        width: 300px;
+        grid-template-columns: 1/2;
+        grid-template-rows: auto;
+        align-self: flex-start;
+        justify-self: center;
+        text-align: center;
+        
+        
+    }
+    .tituloPrincipal h1{
+        justify-self: center;
+        align-self: end;
+        font-size: 20px;
+    }
+    .galeria{
+        margin-left: 10px;
+        height: 400px;
+        width: 100%;
+        justify-self:center;
+    }
+    
+    .img1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        background-position: center;
+        
+    }
+    
+    .img2{
+        grid-column: 3/6;
+        grid-row: 1/2;
+    }
+    
+    .img3{
+        grid-column: 3/6;
+        grid-row: 2/3;
+    }
+    
+    .img4{
+        grid-column: 1/3;
+        grid-row:3/4;  
+    }
+    
+    .img5{
+        grid-column: 1/3;
+        grid-row: 2/3; 
+    }
+    
+    .img6{
+    grid-column: 3/6;
+    grid-row: 3/3;
+        
+    }
+    
+    .cajaMediosDePago{
+    margin-left: 10px;
+    justify-content: center;
+    height: 200px;
+    justify-content: space-between;
+    }
+    
+    .bonotesMediosDePago{
+        justify-self: center;
+    }
+
+    .cajaFormulario{
+        border-radius: 5px;
+        background-color:#ccc;
+        padding: 10px;  
+        margin: 50px;
+        }
+}
