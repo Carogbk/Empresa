@@ -1,11 +1,11 @@
 
-*{
+/* *{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-}
+} */
 /* -----------------------------------ESTRUCTURA----------------------------------------------- */
-.contenedor{
+/* .contenedor{
     display: grid;
     grid-template-areas: "box1 box2" "box3 box3" "box4 box4";
     width: 100%;
@@ -25,18 +25,18 @@
     background:#ACA885;
     /* height: 300px; */
     
-}
+/* } */
 
-.box3{
+/* .box3{
     grid-area: box3;
 }
 
 .box4{
     grid-area: box4;
     
-}
+} */
 /* --------------------------------HEADER--------------------------------------------------- */
-.marcar{
+/* .marcar{
     color: #9a7352;
 }
 
@@ -75,10 +75,10 @@
     float:initial;
     text-decoration: none;
     
-}
+} */
 
 
-.barra {
+/* .barra {
     grid-area: box2;
     float: right;
     
@@ -102,10 +102,10 @@
 
 .barra nav ul a:hover{
 color: #9a7352;
-}
+} */
 
 /* --------------------------------INDEX--------------------------------------------------- */
-.contenedor{
+/* .contenedor{
     display: grid;
 }
 .contenedorBanner{
@@ -144,8 +144,8 @@ border-radius: 5px;
     top: 15%;
     animation:backInDown; 
     animation-duration: 2s;  
-}
-.textoBanner{
+} */
+/* .textoBanner{
     color: #555;
     font-size: 25px;
     font-family: cursive;
@@ -203,9 +203,9 @@ transition-delay: 1s;
 }
 h2{
     -webkit-transition: 1s linear;
-    transition: 1s linear;
-}
-h2:hover{
+    transition: 1s linear; */
+/* } */
+/* h2:hover{
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
     box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
 }
@@ -217,9 +217,9 @@ h2:hover{
     display: grid;
     gap: 5px;
     box-shadow: 0 0 5px black;
-}
+} */
 
-.img{
+/* .img{
     background-color: #9a7352;
     border: 1px solid #ffffff;
     border-radius: 3px;
@@ -348,11 +348,11 @@ h3{
     text-align: center;
     color: #9a7352;
     background-color: #243e3d;  
-}
+} */
 
 
 /* -----------------------------------------PRODUCTOS---------------------------------------------------------- */
-.tituloRealizarPedido{
+/* .tituloRealizarPedido{
     color: #243e3d;
     font-size: 20px;
     font-family:cursive;
@@ -389,14 +389,14 @@ footer p{
 
 .derechos{
     background-color:#626C66;
-    /* width: 100%; */
+    width: 100%;
     height: 10px;
     text-align: center;
     padding: 10px;
     margin-top: 0px;
-}
+} */
 /* --------------------------------NOSOTROS--------------------------------------------------- */
-.contenedorNos{
+/* .contenedorNos{
     width: 100%;
     height: 40vh;
     background-image: linear-gradient(270deg, #b49d7f 0, #ad9172 16.67%, #a58363 33.33%, #9a7252 50%, #8f6142 66.67%, #875336 83.33%, #80482d 100%);
@@ -467,9 +467,9 @@ text-align: center;
     font-size: 25px;
     margin-left: 5px;
     text-align: justify;
-}
+} */
 /* --------------------------------------------PRODUCTOS-------------------------------------------------- */
-.contenedorBannerP{
+/* .contenedorBannerP{
         width: 100%;
         height: 50vh;
         background-color:#f6f1f0;
@@ -500,9 +500,9 @@ text-align: center;
     height: 40px;
     padding-left: 400px;
     
-}
+} */
 /* --------------------------------CONTACTO-------------------------------------------------- */
-.contenedorContacto{
+/* .contenedorContacto{
 
     display: grid;
     grid-template-rows: 5% 5% 0% 30% 5% 55%;
@@ -528,9 +528,9 @@ text-align: center;
 }
 .informacionContacto{
     grid-template-rows: 3/4;
-}
+} */
 
-.subtituloConsultanos{
+/* .subtituloConsultanos{
     grid-template-rows: 4/5;
     color: #243e3d;
     font-size: 30px;
@@ -553,9 +553,9 @@ text-align: center;
     font-weight: bold;
     color: #9a7352;
 
-}
+} */
 
-.subtituloIniciarSesion{
+/* .subtituloIniciarSesion{
     font-size: 20px;
     font-family: cursive;
     color: #9a7352; 
@@ -582,9 +582,9 @@ padding-left: 550px;
     color: #9a7352; 
     text-transform: capitalize; 
     padding-left: 35px;
-}
+} */ 
 /* -----------------------------------RESPONSIVE GALERIA-------------------------------------------------- */
-    .img1{
+    /* .img1{
         grid-column: 1/2;
         grid-row: 1/3;
     }
@@ -612,10 +612,10 @@ padding-left: 550px;
     .img6{
     grid-column: 3/5;
     grid-row: 2/4;
-    }
+    } */
 
 /* ---------------------------------------RESPONSE INDEX---------------------------------------------------- */
-@media (max-width: 785px) {
+/* @media (max-width: 785px) {
 .contenedor {
     grid-template-columns: 20% auto;
     grid-template-rows: 50px auto 40px;
@@ -658,7 +658,6 @@ font-size: 25px;
     height: 300px;
     width: 100%;
     justify-self:center;
- 
 }
 
 .img1{
@@ -699,9 +698,9 @@ grid-template-rows: 50% 50%;
 .bonotesMediosDePago{
     justify-self: center;
 }
-}
+} */
 /* ------------------------------------------------------------------------------------------------------------ */
-@media(max-width: 360px){
+/* @media(max-width: 360px){
     .contenedor {
         grid-template-columns: 20% auto;
         grid-template-rows: 50px 50px    auto 40px;
@@ -810,4 +809,4 @@ grid-template-rows: 50% 50%;
         padding: 10px;  
         margin: 50px;
         }
-}
+    }
