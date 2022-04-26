@@ -214,11 +214,11 @@ h2:hover{
 .galeria{
     height: 600px;
     width: 100%;
-    background-color: #ACA885;
     display: grid;
-    padding: 10px;
     gap: 5px;
+    box-shadow: 0 0 5px black;
 }
+
 .img{
     background-color: #9a7352;
     border: 1px solid #ffffff;
@@ -658,6 +658,7 @@ font-size: 25px;
     height: 300px;
     width: 100%;
     justify-self:center;
+ 
 }
 
 .img1{
