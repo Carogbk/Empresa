@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CocoritaDecoHogar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="../ccs/estilos.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CocoritaDecoHogar</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="../ccs/estilos.css">
+    </head>
 
 <body>
-    <main>
-                <div class="contenedor">
-                    <div class="box1">
-        <header>
+    <!-- HEADER-NAVBAR ----------------------------------------------------------------------------------------->
+    <nav class="navbar navbar-expand-md  navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Cocorita Deco-Hogar</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav justify-content-end w-100">
+                <li class="nav-item ">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../pages/ingresar.html">Ingresar</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
                     
-                        <div class="header">
-                            <div class="logo">
-                                <p>Cocorita <span>Deco-Hogar</span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box2">
-        
-                        <div class="barra">
-                            <nav>
-                                <ul>
-                                    <li><a href="../index.html">Inicio</a></li>
-                                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                                    <li><a href="../pages/productos.html">Productos</a></li>
-                                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                                    <li><a href="../pages/ingresar.html">Ingresar</a></li>
-                                </ul>
-                            </nav>
-                        </header>
-                        </div>
-                    </div>
-                    <div class="box3">
             <h1 class="tituloIngresar">Bienvenidos, gracias por formar parte de nuestra comunidad!</h1><br><br>
 
             <article>
                 <p class="textoIngresar">Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</p>
-            </article><br><br>
+            </article>
 
-            <form class="formularioIngresar">
-                <legend class="subtituloIniciarSesion">Iniciar Sesión</legend><br>
-                <input type="email" placeholder="Mail"><br><br>
-                <input type="password" placeholder="Contraseña"><br><br>
-                <input type="submit" value="Iniciar Sesión">
-            </form><br><br>
+            <form>
+                <div class="container">
+                <div class="form-group">
+                <label for="formGroupExampleInput">Usuario</label>
+                <input type="email" class="form-control" id="formGroupExampleInput" placeholder="tu_email@ejemplo.com">
+                </div>
+                <div class="form-group">
+                <label for="formGroupExampleInput2">Contraseña</label>
+                <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="*****">
+                </div>
+            </div>
+            </form>
 
             <article>
                 <p class="textoRegistrar">Si todavia no perteneces a nuestra comunidad, podes registrarte ¡ahora mismo!.
@@ -74,16 +87,59 @@
             </div>
             <h2>Muchas Gracias por visitar nuestro sitio web :)</h2><br><br>
             <footer>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <br>
-
-                <p>Autora:Carolina Gonzalez</p>
-                <p class="derechos"> 2022 Todos los derechos reservados</p>
+                <div>
+                    <h1 class="tituloFooter">Cocorita Deco-Hogar</h1>
+                </div>
+                <section class="container-fluid">
+                    <div class="row">
+                        <article class="redesSociales col-12 text-center h4">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </article>
+                    </div>
+                    <div class="row">
+                        <section class="col-3">
+                            <ul class="listaFooter">
+                                <li>
+                                    <a class="nav-link" href="./index.html">Inicio</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./pages/productos.html">Productos</a>
+                                    </liclass=>
+                                <li>
+                                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                                    </liclass=>
+                                <li>
+                                    <a class="nav-link" href="./pages/ingresar.html">Ingresar</a>
+                                </li>
+                            </ul>
+                        </section>
+                        <article class="col-3 align-self-stretch bd-highlight">
+                            <h4 class=" font-weight-lighter">Suscríbete para recibir todas las novedades</h4>
+                        </article>
+                        <div class="mb-3 col-3 align-self-stretch bd-highlight">
+        
+                            <input type="email" class="form-control" id="mailUsuario" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div class="mb-3 col-1 align-self-stretch bd-highlight">
+                            <input type="submit" name="" id="" value="Enviar" class="btn btn-secondary">
+                        </div>
+                </section>
             </footer>
-        </section>
+            <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
