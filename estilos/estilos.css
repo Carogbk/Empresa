@@ -1,0 +1,130 @@
+.navbar {
+  background-color: #ACA885;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.navbar a.nav-link {
+  color: #243e3d !important;
+}
+.navbar a:hover {
+  background-color: aliceblue;
+}
+
+.jumbotron {
+  background-image: url(../img/baner/Bama-Sala-color.jpg);
+  background-size: cover;
+  background-position: inherit;
+  height: 350px;
+  color: aliceblue;
+  text-shadow: 0 0 5px #243e3d;
+}
+
+.btn-secondary {
+  background-color: #243e3d;
+}
+
+h2 {
+  text-align: center;
+  font-family: cursive;
+  text-shadow: 0 0 5px #243e3d;
+}
+
+.productos-fila img {
+  object-fit: cover;
+  height: 450px;
+  width: 100%;
+}
+
+.carousel-item h5 {
+  text-shadow: 0 0 6px #243e3d;
+  font-size: 20px;
+}
+.carousel-item p {
+  text-shadow: 0 0 5px #243e3d;
+}
+
+h3 {
+  color: #243e3d;
+  text-shadow: 0 0 5px #243e3d;
+}
+
+.form {
+  background-color: #ACA885;
+  width: 50%;
+}
+
+/* nosotros */
+
+/* productos */
+h1 {
+  color: #243e3d;
+  text-shadow: 0 0 5px black;
+  font-family: cursive;
+}
+
+.carouselProducto img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.carousel-indicators li {
+  width: 0px !important;
+  height: 0px !important;
+}
+
+.card {
+  border: none;
+}
+
+.card img {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.card-img-top:hover {
+  filter: saturate(180%);
+}
+
+footer {
+  background-color: #ACA885;
+  color: rgb(248, 248, 248);
+}
+
+.tituloFooter {
+  text-align: center;
+  color: #243e3d;
+  font-size: 30px;
+  text-shadow: 0 0 5px color1;
+}
+
+.listaFooter {
+  list-style: none;
+}
+
+.listaFooter a {
+  text-decoration: none;
+  color: #243e3d;
+  text-shadow: 0 0 5px whitesmoke;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 765px) {
+  .d-none {
+    display: block !important;
+  }
+}
+/* contacto */
+.contacto {
+  background-color: #243e3d;
+  color: antiquewhite;
+}
+
+.pNos {
+  background-color: aqua;
+  height: 200px;
+  width: 100%;
+}
+
+/*# sourceMappingURL=estilos.css.map */
