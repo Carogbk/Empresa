@@ -1,12 +1,10 @@
 .navbar {
   background-color: #ACA885;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-
 .navbar a.nav-link {
   color: #243e3d !important;
 }
-
 .navbar a:hover {
   background-color: aliceblue;
 }
@@ -20,6 +18,10 @@
   text-shadow: 0 0 5px #243e3d;
 }
 
+.tituloIndex {
+  color: #ACA885;
+}
+
 .btn-secondary {
   background-color: #243e3d;
 }
@@ -31,8 +33,7 @@ h2 {
 }
 
 .productos-fila img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 450px;
   width: 100%;
 }
@@ -41,18 +42,8 @@ h2 {
   text-shadow: 0 0 6px #243e3d;
   font-size: 20px;
 }
-
 .carousel-item p {
   text-shadow: 0 0 5px #243e3d;
-}
-
-.botonesMedioPago {
-  padding-top: 10px;
-  margin: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-left: 300px;
 }
 
 h3 {
@@ -66,6 +57,20 @@ h3 {
 }
 
 /* nosotros */
+.tituloNosotros {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.tituloNosotros p {
+  color: #243e3d;
+  text-shadow: 0 0 5px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* productos */
 h1 {
   color: #243e3d;
@@ -73,9 +78,8 @@ h1 {
   font-family: cursive;
 }
 
-.carouselProducto img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.carousel-item svg {
+  object-fit: cover;
   height: 200px;
   width: 100%;
 }
@@ -90,27 +94,25 @@ h1 {
 }
 
 .card img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 200px;
   width: 100%;
 }
 
 .card-img-top:hover {
-  -webkit-filter: saturate(180%);
-          filter: saturate(180%);
+  filter: saturate(180%);
 }
 
 footer {
   background-color: #ACA885;
-  color: #f8f8f8;
+  color: rgb(248, 248, 248);
 }
 
 .tituloFooter {
   text-align: center;
   color: #243e3d;
   font-size: 30px;
-  text-shadow: 0 0 5px #243e3d;
+  text-shadow: 0 0 5px color1;
 }
 
 .listaFooter {
@@ -130,10 +132,10 @@ footer {
     display: block !important;
   }
 }
-
 /* contacto */
 .contacto {
   background-color: #243e3d;
   color: antiquewhite;
 }
+
 /*# sourceMappingURL=estilos.css.map */

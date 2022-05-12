@@ -1,9 +1,20 @@
 $color1:#243e3d;
+$color2: #ACA885;
 
 .navbar{
-    background-color:#ACA885;
+    background-color: $color2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 60px;
     
+    .logoNav{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-shadow: 0 0 5px wheat;
+        justify-content: flex-start;
+        margin-top: 5px;
+    }
+    .pagesNav{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
     a.nav-link{
     color: $color1 !important;
     }
@@ -19,9 +30,16 @@ $color1:#243e3d;
         color: aliceblue;
         text-shadow: 0 0 5px $color1;
     }
+
+.tituloIndex{
+    color:$color1;
+    text-shadow: 0 0 4px white;
+    font-weight: bold;
+    font-size:40px;
+}
     
     .btn-secondary{
-        background-color: $color1
+        background-color: $color1;
     }
     
     h2{
@@ -59,18 +77,23 @@ $color1:#243e3d;
     width: 50%;
     }
     /* nosotros */
+    
+.contenedorNosotros{
+background: linear-gradient(to top, #f5f4ef, white);
+}
 
     /* productos */
     h1{
         color: #243e3d;
         text-shadow: 0 0 5px black;
         font-family: cursive;
+        font-size: 30px;
+        text-align: center;
     }
     .carouselProducto img{
-        object-fit: cover;
-        height: 200px;
-        width: 100%;
+        height: 25vh;
     }
+    
     .carousel-indicators li{
     width: 0px !important;
     height: 0px !important;
@@ -123,6 +146,3 @@ $color1:#243e3d;
         color: antiquewhite;
         
     }
-    @import "_nosotros"
-
-    
