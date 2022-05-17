@@ -1,148 +1,250 @@
 $color1:#243e3d;
 $color2: #ACA885;
+$color3:#f5f4ef;
 
-.navbar{
+.navbar {
     background-color: $color2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    height: 60px;
-    
-    .logoNav{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    .logoNav {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-shadow: 0 0 5px wheat;
         justify-content: flex-start;
         margin-top: 5px;
     }
-    .pagesNav{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-    a.nav-link{
-    color: $color1 !important;
-    }
-    a:hover{
-    background-color:aliceblue;
-    }
-}
-    .jumbotron{
-        background-image: url(../img/baner/Bama-Sala-color.jpg);
-        background-size:cover;
-        background-position: inherit;
-        height: 350px;
-        color: aliceblue;
-        text-shadow: 0 0 5px $color1;
+
+    .pagesNav {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
 
-.tituloIndex{
-    color:$color1;
+    a.nav-link {
+        color: $color1 !important;
+    }
+
+    a:hover {
+        box-shadow: 0 0 5px #f5f4ef;
+    }
+}
+
+.jumbotron {
+    background-image: url(../img/baner/Bama-Sala-color.jpg);
+    background-size: cover;
+    background-position: inherit;
+    height: 350px;
+    color: aliceblue;
+    text-shadow: 0 0 5px $color1;
+}
+
+.tituloIndex {
+    color: $color1;
     text-shadow: 0 0 4px white;
     font-weight: bold;
-    font-size:40px;
+    font-size: 40px;
 }
-    
-    .btn-secondary{
-        background-color: $color1;
-    }
-    
-    h2{
+
+.btn-secondary {
+    background-color: $color1;
+}
+
+h2 {
     text-align: center;
     font-family: cursive;
     text-shadow: 0 0 5px #243e3d;
-    }
-    
-    .productos-fila img{
+}
+
+.productos-fila img {
     object-fit: cover;
     height: 450px;
     width: 100%;
-    }
-    
-    .carousel-item {
-        h5{
-            text-shadow: 0 0 6px #243e3d;
-            font-size: 20px;
-        }
-        
-        p{
-            text-shadow: 0 0 5px #243e3d;
-        }
-    }
-
-    
-    h3{
-    color: #243e3d;
-    text-shadow: 0 0 5px #243e3d;
-    }
-    
-    
-    .form{
-    background-color: #ACA885;
-    width: 50%;
-    }
-    /* nosotros */
-    
-.contenedorNosotros{
-background: linear-gradient(to top, #f5f4ef, white);
 }
 
-    /* productos */
-    h1{
-        color: #243e3d;
-        text-shadow: 0 0 5px black;
-        font-family: cursive;
-        font-size: 30px;
-        text-align: center;
+.carousel-item {
+    h5 {
+        text-shadow: 0 0 6px #243e3d;
+        font-size: 20px;
     }
-    .carouselProducto img{
-        height: 25vh;
+
+    p {
+        text-shadow: 0 0 5px #243e3d;
     }
+}
+
+.mediosDePago {
+    padding-top: 20px;
+    color: #243e3d;
+    text-align: center;
+
+}
+
+.mediosDePago:hover {
+    box-shadow: 0 0 5px $color2;
+    background-color: #f5f4ef;
+}
+
+
+h3 {
+    color: #243e3d;
+    text-shadow: 0 0 5px #243e3d;
+}
+
+h4 {
+    color: $color2;
+}
+
+.form {
+    border: 2px solid $color1;
+    width: 100%;
+    background-color: $color3;
     
-    .carousel-indicators li{
+}
+.tituloMiniForm{
+    color: $color2;
+    font-weight: bold;
+}
+.textMiniForm{
+    font-weight: bold;
+    text-align: center;
+}
+/* nosotros */
+
+.contenedorNosotros {
+    background: linear-gradient(to top, #f5f4ef, white);
+}
+
+.subtitulosNos {
+    color: #ACA885;
+    text-shadow: none;
+}
+
+.containerEach {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.tienda-icon,
+.equipo-icon,
+.deco-icon {
+    height: 250px;
+    width: 400px;
+    border: 2px solid $color2;
+}
+
+@each $nosotros in tienda,
+equipo,
+deco {
+    .#{$nosotros}-icon {
+        background-image: url("../img/nosotros/#{$nosotros}-icon.jpg");
+        background-size: contain;
+        box-shadow: 0 0 5px black;
+    }
+}
+
+/* productos */
+h1 {
+    color: $color2;
+    text-shadow: 1px 1px 2px $color1;
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.carouselProducto img {
+    height: 30vh;
+}
+
+.carousel-indicators li {
     width: 0px !important;
     height: 0px !important;
+}
+
+.card {
+    border: none;
+}
+
+.card img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.card-img-top:hover {
+    filter: saturate(180%);
+}
+
+/* ingresar */
+.textoIngresar {
+    color: #243e3d;
+    text-shadow: 0 0 5px $color1;
+}
+
+.form-group {
+    color: #243e3d;
+}
+
+/* footer */
+footer {
+    background-color: #ACA885;
+    color: rgb(248, 248, 248);
+    padding: 10px;
+}
+
+.fa-brands {
+    color: $color1;
+    text-decoration: none;
+}
+
+.fa-brands:hover {
+    color: $color1;
+    box-shadow: 0 0 5px wheat;
+    text-decoration: none;
+}
+
+.tituloFooter {
+    text-align: center;
+    color: $color1;
+    font-size: 30px;
+    text-shadow: 0 0 5px color1;
+}
+
+.listaFooter {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-self: center;
+
+}
+
+.listaFooter a {
+    text-decoration: none;
+    color: #243e3d;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.nav-link:hover {
+    color: $color1;
+    box-shadow: 0 0 5px wheat;
+    text-decoration: none;
+}
+
+@media (max-width: 765px) {
+    .d-none {
+        display: block !important;
     }
-    .card{
-        border: none;
+
+    .listaFooter {
+        flex-direction: column;
     }
-    .card img{
-        object-fit:cover;
-        height: 200px;
-        width: 100%;
-    }
-    
-    .card-img-top:hover {filter: saturate(180%);}
-    
-    footer{
-        background-color: #ACA885;
-        color:rgb(248, 248, 248);
-        }
-    .tituloFooter{
-        text-align: center;
-        color: $color1;
-        font-size: 30px;
-        text-shadow: 0 0 5px color1;
-    }
-    .listaFooter{
-        list-style: none;
-    }
-    
-    .listaFooter a{
-        text-decoration: none;
-        color:#243e3d;
-        text-shadow: 0 0 5px whitesmoke;
-        font-size: 15px;
-        padding-bottom: 5px;
-        
-    }
-    
-    @media (max-width: 765px){
-        .d-none {
-            display: block!important;
-        }
-    
-    }
-    
-    
-    /* contacto */
-    .contacto{
-        background-color: #243e3d;
-        color: antiquewhite;
-        
-    }
+
+}
+
+
+/* contacto */
+.contacto {
+    background-color: #243e3d;
+    color: antiquewhite;
+
+}

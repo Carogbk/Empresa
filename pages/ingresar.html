@@ -57,12 +57,13 @@
             <h1 class="tituloIngresar">¡Bienvenidos, gracias por formar parte de nuestra comunidad!</h1><br><br>
 
             <article>
-                <p class="textoIngresar">Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</p>
+                <p class="textoIngresar text-center">Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</p>
             </article>
 
-            <form>
-                <div class="container">
-                <div class="form-group">
+            <div class="container">
+            <div class="row">
+            <form class="col shadow-sm p-3 mb-5 bg-white rounded">
+                <div class="form-group ">
                 <label for="formGroupExampleInput">Usuario</label>
                 <input type="email" class="form-control" id="formGroupExampleInput" placeholder="tu_email@ejemplo.com">
                 </div>
@@ -70,75 +71,89 @@
                 <label for="formGroupExampleInput2">Contraseña</label>
                 <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="*****">
                 </div>
+                <div>
+                    <input type="submit" name="" id="" value="Enviar" class="btn btn-secondary">
+                </div>
             </div>
             </form>
-
+        </div>
             <article>
-                <p class="textoRegistrar">Si todavia no perteneces a nuestra comunidad, podes registrarte ¡ahora mismo!.
-                    Completa el formulario con tus datos y comenza a disfrutar de los beneficios que te brindamos :)
+                <p class="textoIngresar text-center">Si todavia no perteneces a nuestra comunidad, podes registrarte ¡ahora mismo!
+                    Completa el formulario con tus datos y comenza a disfrutar de los beneficios que te brindamos.
                 </p>
-            </article><br><br>
-
-            <form class="formularioIngresar">
-                <legend class="subtituloRegistrar">Crear Cuenta</legend><br>
-                <input type="text" placeholder="Nombre"><br><br>
-                <input type="text" placeholder="Apellido"><br><br>
-                <input type="email" placeholder="Mail"><br><br>
-                <input type="password" placeholder="Contraseña"><br><br>
-                <input type="password" placeholder="Repetir Contraseña"><br><br>
-                <input type="submit" value="Registrar Cuenta">
-            </form><br><br>
-            <div class="iconoWp">
-                <a
-                    href="https://api.whatsapp.com/send/?phone=%2B5493571614756&text=Hola!%20Quiero%20realizar%20una%20consulta%20por%20el%20producto%20...&app_absent=0"><img
-                        src="../img/iconowp/wplogo.png" alt="Icono de Whatsapp" height="40px"></a>
-            </div>
-            <h2>Muchas Gracias por visitar nuestro sitio web :)</h2><br><br>
-            <footer>
-                <div>
-                    <h2 class="tituloFooter">Cocorita Deco-Hogar</h2>
-                </div>
-                <section class="container-fluid">
-                    <div class="row">
-                        <article class="redesSociales col-12 text-center h4">
-                            <i class="fa-brands fa-facebook"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                            <i class="fa-brands fa-twitter"></i>
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </article>
+            </article>
+            <div class="container">
+                <div class="row">
+                <form class="col shadow-sm p-3 mb-5 bg-white rounded">
+                    <div class="form-group ">
+                        <label for="formGroupExampleInput">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="formNombre">
                     </div>
-                    <div class="row">
-                        <section class="col-3">
-                            <ul class="listaFooter">
-                                <li>
-                                    <a class="nav-link" href="./index.html">Inicio</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                                </li>
-                                <li>
-                                    <a class="nav-link" href="./pages/productos.html">Productos</a>
-                                    </liclass=>
-                                <li>
-                                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                                    </liclass=>
-                                <li>
-                                    <a class="nav-link" href="./pages/ingresar.html">Ingresar</a>
-                                </li>
-                            </ul>
-                        </section>
-                        <article class="col-3 align-self-stretch bd-highlight">
-                            <h4 class=" font-weight-lighter">Suscríbete para recibir todas las novedades</h4>
-                        </article>
-                        <div class="mb-3 col-3 align-self-stretch bd-highlight">
-        
-                            <input type="email" class="form-control" id="mailUsuario" placeholder="nombre@ejemplo.com">
-                        </div>
-                        <div class="mb-3 col-1 align-self-stretch bd-highlight">
-                            <input type="submit" name="" id="" value="Enviar" class="btn btn-secondary">
-                        </div>
+                    <div class="form-group ">
+                        <label for="formGroupExampleInput">Teléfono</label>
+                        <input type="number" class="form-control" id="formTel">
+                    </div>
+                    <div class="form-group ">
+                        <label for="formGroupExampleInput">Mail</label>
+                        <input type="email" class="form-control" id="formMail">
+                    </div>
+                    <div class="form-group">
+                    <label for="formGroupExampleInput2">Contraseña</label>
+                    <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="*****">
+                    </div>
+                    <div>
+                        <input type="submit" name="" id="" value="Enviar" class="btn btn-secondary">
+                    </div>
+                </div>
+                </form>
+            </div>
+
+    <!-- FOOTER-------------------------------------------------------------------------------- -->
+    <footer>
+        <div>
+            <h4 class="tituloFooter">Cocorita Deco-Hogar</h4>
+        </div>
+        <section class="container-fluid">
+            <div class="row">
+                <article class="redesSociales col-lg-12 col-md-12 col-sm-12 text-center h4">
+                    <a href="https://www.facebook.com/" target="_blank" class="fa-brands fa-facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="fa-brands fa-instagram"></a>
+                    <a href="https://twitter.com/home?lang=es" target="_blank" class="fa-brands fa-twitter"></a>
+                    <a href="https://wa.link/znzpnb" target="_blank" class="fa-brands fa-whatsapp"></a>
+                </article>
+            </div>
+            <div class="row">
+                
+                <article class="col-lg-12 col-md-12 col-sm-12 align-self-stretch bd-highlight">
+                    <h6 class="font-weight-lighter">Suscríbete para recibir todas las novedades</h6>
+                </article>
+                <div class="col-lg-9 col-md-9 col-sm-9 mb-3  align-self-stretch bd-highlight">
+                    <input type="email" class="form-control" id="mailUsuario" placeholder="nombre@ejemplo.com">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-9 mb-3 align-self-stretch bd-highlight">
+                    <input type="submit" name="" id="nameUsuario" value="Enviar" class="btn btn-secondary">
+                </div>
+                <section class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="listaFooter">
+                        <li>
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="../pages/ingresar.html">Ingresar</a>
+                        </li>
+                    </ul>
                 </section>
-            </footer>
+        </section>
+    </footer>
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
