@@ -25,6 +25,16 @@
           box-shadow: 0 0 5px #f5f4ef;
 }
 
+.navbar-toggler:hover {
+  -webkit-box-shadow: 0 0 5px #f5f4ef;
+          box-shadow: 0 0 5px #f5f4ef;
+}
+
+.navbar-toggler:hover a:hover {
+  -webkit-box-shadow: 0 0 5px #f5f4ef;
+          box-shadow: 0 0 5px #f5f4ef;
+}
+
 .jumbotron {
   background-image: url(../img/baner/Bama-Sala-color.jpg);
   background-size: cover;
@@ -125,33 +135,45 @@ h4 {
           justify-content: center;
 }
 
-.tienda-icon,
-.equipo-icon,
-.deco-icon {
+.co-icon,
+.oc-icon,
+.ri-icon,
+.ta-icon {
   height: 250px;
-  width: 400px;
+  width: 300px;
   border: 2px solid #ACA885;
 }
 
-.tienda-icon {
-  background-image: url("../img/nosotros/tienda-icon.jpg");
+.co-icon {
+  background-image: url("../img/nosotros/co-icon.png");
   background-size: contain;
-  -webkit-box-shadow: 0 0 5px black;
-          box-shadow: 0 0 5px black;
+  background-position: center;
+  -webkit-box-shadow: 0 0 6px black;
+          box-shadow: 0 0 6px black;
 }
 
-.equipo-icon {
-  background-image: url("../img/nosotros/equipo-icon.jpg");
+.oc-icon {
+  background-image: url("../img/nosotros/oc-icon.png");
   background-size: contain;
-  -webkit-box-shadow: 0 0 5px black;
-          box-shadow: 0 0 5px black;
+  background-position: center;
+  -webkit-box-shadow: 0 0 6px black;
+          box-shadow: 0 0 6px black;
 }
 
-.deco-icon {
-  background-image: url("../img/nosotros/deco-icon.jpg");
+.ri-icon {
+  background-image: url("../img/nosotros/ri-icon.png");
   background-size: contain;
-  -webkit-box-shadow: 0 0 5px black;
-          box-shadow: 0 0 5px black;
+  background-position: center;
+  -webkit-box-shadow: 0 0 6px black;
+          box-shadow: 0 0 6px black;
+}
+
+.ta-icon {
+  background-image: url("../img/nosotros/ta-icon.png");
+  background-size: contain;
+  background-position: center;
+  -webkit-box-shadow: 0 0 6px black;
+          box-shadow: 0 0 6px black;
 }
 
 /* productos */
@@ -192,7 +214,12 @@ h1 {
 /* ingresar */
 .textoIngresar {
   color: #243e3d;
-  text-shadow: 0 0 5px #243e3d;
+  font-family: cursive;
+}
+
+.formuIng {
+  -webkit-box-shadow: 0 0 5px #243e3d;
+          box-shadow: 0 0 5px #243e3d;
 }
 
 .form-group {

@@ -25,6 +25,12 @@ $color3:#f5f4ef;
         box-shadow: 0 0 5px #f5f4ef;
     }
 }
+.navbar-toggler:hover{
+    box-shadow: 0 0 5px #f5f4ef;
+a:hover{
+    box-shadow: 0 0 5px #f5f4ef;
+}
+}
 
 .jumbotron {
     background-image: url(../img/baner/Bama-Sala-color.jpg);
@@ -97,6 +103,7 @@ h4 {
     background-color: $color3;
     
 }
+
 .tituloMiniForm{
     color: $color2;
     font-weight: bold;
@@ -122,21 +129,21 @@ h4 {
     justify-content: center;
 }
 
-.tienda-icon,
-.equipo-icon,
-.deco-icon {
+.co-icon,
+.oc-icon,
+.ri-icon, 
+.ta-icon{
     height: 250px;
-    width: 400px;
+    width: 300px;
     border: 2px solid $color2;
 }
 
-@each $nosotros in tienda,
-equipo,
-deco {
+@each $nosotros in co,oc,ri,ta{
     .#{$nosotros}-icon {
-        background-image: url("../img/nosotros/#{$nosotros}-icon.jpg");
+        background-image: url("../img/nosotros/#{$nosotros}-icon.png");
         background-size: contain;
-        box-shadow: 0 0 5px black;
+        background-position: center;
+        box-shadow: 0 0 6px black;
     }
 }
 
@@ -174,11 +181,14 @@ h1 {
 }
 
 /* ingresar */
-.textoIngresar {
-    color: #243e3d;
-    text-shadow: 0 0 5px $color1;
-}
 
+.textoIngresar {
+    color: $color1;
+    font-family: cursive;
+}
+.formuIng{
+    box-shadow: 0 0 5px $color1;
+}
 .form-group {
     color: #243e3d;
 }
