@@ -6,11 +6,13 @@ $color3:#f5f4ef;
     background-color: $color2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
+
     .logoNav {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         text-shadow: 0 0 5px wheat;
         justify-content: flex-start;
         margin-top: 5px;
+        box-shadow: none !important;
     }
 
     .pagesNav {
@@ -25,11 +27,13 @@ $color3:#f5f4ef;
         box-shadow: 0 0 5px #f5f4ef;
     }
 }
-.navbar-toggler:hover{
+
+.navbar-toggler:hover {
     box-shadow: 0 0 5px #f5f4ef;
-a:hover{
-    box-shadow: 0 0 5px #f5f4ef;
-}
+
+    a:hover {
+        box-shadow: 0 0 5px #f5f4ef;
+    }
 }
 
 .jumbotron {
@@ -55,6 +59,7 @@ a:hover{
 h2 {
     text-align: center;
     font-family: cursive;
+    font-size: 30px;
     text-shadow: 0 0 5px #243e3d;
 }
 
@@ -73,18 +78,39 @@ h2 {
     p {
         text-shadow: 0 0 5px #243e3d;
     }
+
+    .imgBanner {
+        height: auto;
+        width: 100%;
+    }
 }
 
 .mediosDePago {
-    padding-top: 20px;
-    color: #243e3d;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.mediosDePago:hover {
-    box-shadow: 0 0 5px $color2;
-    background-color: #f5f4ef;
+.botonPago {
+    background-color: $color2;
+    height: 100px;
+    width: 200px;
+    border-radius: 30px;
+    text-align: center;
+    margin: 10px;
+    padding: 40px 0;
+    font-family: cursive;
+    box-shadow: 0 0 5px black;
+    overflow: hidden;
+    animation: mymove 10s infinite;
+}
+
+@keyframes mymove {
+    50% {
+        box-shadow: 10px 20px 30px $color2;
+    }
 }
 
 
@@ -101,27 +127,26 @@ h4 {
     border: 2px solid $color1;
     width: 100%;
     background-color: $color3;
-    
+
 }
 
-.tituloMiniForm{
+.tituloMiniForm {
     color: $color2;
     font-weight: bold;
 }
-.textMiniForm{
+
+.textMiniForm {
     font-weight: bold;
     text-align: center;
 }
+
 /* nosotros */
 
 .contenedorNosotros {
     background: linear-gradient(to top, #f5f4ef, white);
 }
 
-.subtitulosNos {
-    color: #ACA885;
-    text-shadow: none;
-}
+
 
 .containerEach {
     display: flex;
@@ -131,14 +156,17 @@ h4 {
 
 .co-icon,
 .oc-icon,
-.ri-icon, 
-.ta-icon{
+.ri-icon,
+.ta-icon {
     height: 250px;
     width: 300px;
     border: 2px solid $color2;
 }
 
-@each $nosotros in co,oc,ri,ta{
+@each $nosotros in co,
+oc,
+ri,
+ta {
     .#{$nosotros}-icon {
         background-image: url("../img/nosotros/#{$nosotros}-icon.png");
         background-size: contain;
@@ -152,22 +180,65 @@ h1 {
     color: $color2;
     text-shadow: 1px 1px 2px $color1;
     font-family: cursive;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     font-weight: bold;
 }
 
-.carouselProducto img {
-    height: 30vh;
+.bannerProductos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-.carousel-indicators li {
-    width: 0px !important;
-    height: 0px !important;
+.containerProductos {
+    position: relative;
+    width: 25%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.imgProductos {
+    width: 200px;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: $color3;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.containerProductos:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    color: $color2;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .card {
+    margin-top: 50px;
     border: none;
+    justify-content: center;
+    height: auto;
+    width: 80%;
 }
 
 .card img {
@@ -186,9 +257,11 @@ h1 {
     color: $color1;
     font-family: cursive;
 }
-.formuIng{
+
+.formuIng {
     box-shadow: 0 0 5px $color1;
 }
+
 .form-group {
     color: #243e3d;
 }
@@ -249,8 +322,41 @@ footer {
         flex-direction: column;
     }
 
-}
+    .mediosDePago {
+        flex-direction: column;
+    }
 
+    .botonPago {
+        width: 80%;
+    }
+
+    .containerEach {
+        display: none;
+    }
+
+    .bannerProductos {
+        flex-direction: column;
+    }
+
+    .imgProductos {
+        width: 200px;
+        height: 200px;
+    }
+    .card{
+        margin-left: 50px;
+    }
+    .containerProductos {
+        position: relative;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .imgProductos {
+        width: 200px;
+        height: 200px;
+        margin-left: 25%;
+    }
+}
 
 /* contacto */
 .contacto {

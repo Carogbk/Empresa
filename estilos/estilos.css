@@ -10,6 +10,8 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-top: 5px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .navbar .pagesNav {
@@ -58,6 +60,7 @@
 h2 {
   text-align: center;
   font-family: cursive;
+  font-size: 30px;
   text-shadow: 0 0 5px #243e3d;
 }
 
@@ -77,16 +80,55 @@ h2 {
   text-shadow: 0 0 5px #243e3d;
 }
 
-.mediosDePago {
-  padding-top: 20px;
-  color: #243e3d;
-  text-align: center;
+.carousel-item .imgBanner {
+  height: auto;
+  width: 100%;
 }
 
-.mediosDePago:hover {
-  -webkit-box-shadow: 0 0 5px #ACA885;
-          box-shadow: 0 0 5px #ACA885;
-  background-color: #f5f4ef;
+.mediosDePago {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.botonPago {
+  background-color: #ACA885;
+  height: 100px;
+  width: 200px;
+  border-radius: 30px;
+  text-align: center;
+  margin: 10px;
+  padding: 40px 0;
+  font-family: cursive;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  overflow: hidden;
+  -webkit-animation: mymove 10s infinite;
+          animation: mymove 10s infinite;
+}
+
+@-webkit-keyframes mymove {
+  50% {
+    -webkit-box-shadow: 10px 20px 30px #ACA885;
+            box-shadow: 10px 20px 30px #ACA885;
+  }
+}
+
+@keyframes mymove {
+  50% {
+    -webkit-box-shadow: 10px 20px 30px #ACA885;
+            box-shadow: 10px 20px 30px #ACA885;
+  }
 }
 
 h3 {
@@ -118,11 +160,6 @@ h4 {
 .contenedorNosotros {
   background: -webkit-gradient(linear, left bottom, left top, from(#f5f4ef), to(white));
   background: linear-gradient(to top, #f5f4ef, white);
-}
-
-.subtitulosNos {
-  color: #ACA885;
-  text-shadow: none;
 }
 
 .containerEach {
@@ -181,22 +218,76 @@ h1 {
   color: #ACA885;
   text-shadow: 1px 1px 2px #243e3d;
   font-family: cursive;
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
   font-weight: bold;
 }
 
-.carouselProducto img {
-  height: 30vh;
+.bannerProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.carousel-indicators li {
-  width: 0px !important;
-  height: 0px !important;
+.containerProductos {
+  position: relative;
+  width: 25%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.imgProductos {
+  width: 200px;
+  height: 200px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #f5f4ef;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.containerProductos:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: #ACA885;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .card {
+  margin-top: 50px;
   border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  width: 80%;
 }
 
 .card img {
@@ -288,6 +379,42 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .mediosDePago {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .botonPago {
+    width: 80%;
+  }
+  .containerEach {
+    display: none;
+  }
+  .bannerProductos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imgProductos {
+    width: 200px;
+    height: 200px;
+  }
+  .card {
+    margin-left: 50px;
+  }
+  .containerProductos {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .imgProductos {
+    width: 200px;
+    height: 200px;
+    margin-left: 25%;
   }
 }
 

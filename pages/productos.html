@@ -25,7 +25,11 @@
     <!-- HEADER-NAVBAR ----------------------------------------------------------------------------------------->
     <nav class="navbar navbar-expand-md  navbar-dark">
         <!-- Brand -->
-        <p class="logoNav navbar-brand">Cocorita Deco-Hogar</p>
+        <div class="navbar-brand logoNav">
+            <a class="navbar-brand logoNav" href="../index.html">
+                <p>Cocorita Deco-Hogar</p>
+            </a>
+        </div>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -55,127 +59,104 @@
     </nav>
     <!-- titulo---------------------------------------------------------------------------------- -->
     <h1 class="text-center p-3">Bienvenidos a Nuestra Tienda Online</h1>
-    <!-- CAROUSEL------------------------------------------------------------------------------- -->
-    <div class="container-fluid p-4">
-        <div class="carouselProducto">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="../img/baner/fondo producto1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Envíos a todo el pais</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                    <img src="../img/baner/fondo producto1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Compra mínima $3000</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="../img/baner/fondo producto1.png" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Sin mínimo por productos</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
-                    data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
-                    data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </button>
-            </div>
-        </div>
+    <!-- BANNER------------------------------------------------------------------------------- -->
+    <div class="bannerProductos">
+    <div class="containerProductos">
+        <img src="../img/bannerProductos/envios.png" alt="dibujo de camion con bandera de Argentina" class="imgProductos">
+    <div class="overlay">
+    <article class="text">Envíos gratis a todo el país a partir de $5.000</article>
     </div>
+    </div>
+    <div class="containerProductos">
+        <img src="../img/bannerProductos/compra.png" alt="dibujo de persona con un carrito de supermercado" class="imgProductos">
+    <div class="overlay">
+    <article class="text">Compra mínima $3.000</article>
+    </div>
+    </div>
+    <div class="containerProductos">
+        <img src="../img/bannerProductos/productos.png" alt="dibujo de un florero, cuadro y banco para sentarse" class="imgProductos">
+    <div class="overlay">
+    <article class="text">Sin mínimo por productos</article>
+    </div>
+    </div>
+</div>
+    <h2>Nuestro Catálogo</h2>
     <!-- CARDS--------------------------------------------------------------------------------------- -->
     <div class="container ">
-        <div class="row mt-3">
-            <div class="card  col-lg-3 col-md-4 col-sm-6  " style="width: 18rem;">
-                <img src="../img/productos/producto1.jpeg" class="card-img-top" alt="...">
+        <div class="row">
+            <div class="card col-lg-3 col-md-6 col-sm-6">
+                <img src="../img/productos/producto1.jpeg" class="card-img-top" alt="frascos de vidrio con cereales dentro">
                 <div class="card-body">
                     <h5 class="card-title text-center">Frascos de Vidrio</h5>
                     <p class="card-text text-center">$1.000</p>
                     <a href="../pages/ingresar.html" class="btn btn-secondary w-100">Comprar</a>
                 </div>
             </div>
-            <div class="card  col-lg-3 col-md-4 col-sm-6 " style="width: 18rem;">
-                <img src="../img/productos/producto2.jpeg" class="card-img-top" alt="...">
+            <div class="card col-lg-3 col-md-6 col-sm-6 ">
+                <img src="../img/productos/producto2.jpeg" class="card-img-top" alt="repisas de madera color blanco con diferentes utensillos de cocina sobre ellas">
                 <div class="card-body">
                     <h5 class="card-title text-center">Contenedores de Vidrio</h5>
                     <p class="card-text text-center">$1.500</p>
                     <a href="../pages/ingresar.html" class="btn btn-secondary w-100 ">Comprar</a>
                 </div>
             </div>
-            <div class="card  col-lg-3 col-md-4 col-sm-6 " style="width: 18rem;">
-                <img src="../img/productos/producto3.jpeg" class="card-img-top" alt="...">
+            <div class="card col-lg-3 col-md-6 col-sm-6 ">
+                <img src="../img/productos/producto3.jpeg" class="card-img-top" alt="vela de soja en un recipiente de vidrio, elefante de ceramica de color gris, maceta de ceramica con planta dentro y portalapices de ceramica con diferentes lapices dentro">
                 <div class="card-body">
                     <h5 class="card-title text-center">Velas de Soja</h5>
                     <p class="card-text text-center">$800</p>
                     <a href="../pages/ingresar.html" class="btn btn-secondary w-100">Comprar</a>
                 </div>
             </div>
-            <div class="card  col-lg-3 col-md-4 col-sm-6 " style="width: 18rem;">
-                <img src="../img/productos/producto4.jpeg" class="card-img-top" alt="...">
+            <div class="card col-lg-3 col-md-6 col-sm-6 " >
+                <img src="../img/productos/producto4.jpeg" class="card-img-top" alt="repisas de maderas con soporte de hierro con cananastos de mimbre y maceta de mimbre con planta dentro">
                 <div class="card-body">
                     <h5 class="card-title text-center">Repisa de Madera</h5>
                     <p class="card-text text-center">$3500</p>
                     <a href="../pages/ingresar.html" class="btn btn-secondary w-100">Comprar</a>
                 </div>
             </div>
-            <div class="card  col-lg-3 col-md-4 col-sm-6 " style="width: 18rem;">
-                <img src="../img/productos/producto5.jpeg" class="card-img-top" alt="...">
+            <div class="card  col-lg-3 col-md-6 col-sm-6 ">
+                <img src="../img/productos/producto5.jpeg" class="card-img-top" alt="recipientes plasticos transparentes con diferentes productos de cuidado personal e higiene dentro">
                 <div class="card-body">
                     <h5 class="card-title text-center">Contenedores Plasticos</h5>
                     <p class="card-text text-center">$2.000</p>
                     <a href="../pages/ingresar.html" class="btn btn-secondary w-100">Comprar</a>
                 </div>
             </div>
-            <div class="card  col-lg-3 col-md-4 col-sm-6 " style="width: 18rem;">
-                <img src="../img/productos/producto6.jpeg" class="card-img-top" alt="...">
+            <div class="card col-lg-3 col-md-6 col-sm-6 ">
+                <img src="../img/productos/producto6.jpeg" class="card-img-top" alt="portamaceta macrame con tres macetas de ceramica de color blanco">
                 <div class="card-body">
                     <h5 class="card-title text-center">Portamaceta Macrame</h5>
                     <p class="card-text text-center">$1.500</p>
                     <a href="../pages/ingresar.html" class="btn btn-secondary w-100">Comprar</a>
                 </div>
             </div>
-            <div class="card  col-lg-3 col-md-4 col-sm-6 " style="width: 18rem;">
-                <img src="../img/productos/producto7.jpeg" class="card-img-top" alt="...">
+            <div class="card col-lg-3 col-md-6 col-sm-6 " >
+                <img src="../img/productos/producto7.jpeg" class="card-img-top" alt="repisa con forma de escalera de madera de color negro con toallas blancas y elementos de higiene personal">
                 <div class="card-body">
                     <h5 class="card-title text-center">Contenedor Madera</h5>
                     <p class="card-text text-center">$5.000</p>
                     <a href="../pages/ingresar.html" class="btn btn-secondary w-100">Comprar</a>
                 </div>
             </div>
-            <div class="card  col-lg-3 col-md-4 col-sm-6 " style="width: 18rem;">
-                <img src="../img/productos/producto8.jpeg" class="card-img-top" alt="...">
+            <div class="card col-lg-3 col-md-6 col-sm-6 " >
+                <img src="../img/productos/producto8.jpeg" class="card-img-top" alt="frascos con difusores y spray con liquido blanco dentro, simulando jabon liquido">
                 <div class="card-body">
                     <h5 class="card-title text-center">Difusores Vidrio</h5>
                     <p class="card-text text-center">$1.000</p>
                     <a href="../pages/ingresar.html" class="btn btn-secondary w-100">Comprar</a>
                 </div>
             </div>
-            <div class="card  col-lg-3 col-md-4 col-sm-6 " style="width: 18rem;">
-                <img src="../img/productos/producto9.jpeg" class="card-img-top" alt="...">
+            <div class="card col-lg-3 col-md-6 col-sm-6 ">
+                <img src="../img/productos/producto9.jpeg" class="card-img-top" alt="recibidor de hierro, espejo de forma circular, sombrero de color blanco y otro de color marron, y cartera de color beige y negro. Sobre el recibidor un jarron de vidrio con planta dentro y un portavela">
                 <div class="card-body">
                     <h5 class="card-title text-center">Recibidor Hierro</h5>
                     <p class="card-text text-center">$9.500</p>
                     <a href="../pages/ingresar.html" class="btn btn-secondary w-100">Comprar</a>
                 </div>
             </div>
-            <div class="card  col-lg-3 col-md-4 col-sm-6 " style="width: 18rem;">
+            <div class="card col-lg-3 col-md-6 col-sm-6 " >
                 <img src="../img/productos/producto10.jpeg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-center">Espejo Abstracto</h5>
@@ -183,16 +164,16 @@
                     <a href="../pages/ingresar.html" class="btn btn-secondary w-100">Comprar</a>
                 </div>
             </div>
-            <div class="card col-md-3 col-sm-6" style="width: 18rem;">
-                <img src="../img/productos/producto11.jpeg" class="card-img-top" alt="...">
+            <div class="card col-lg-3 col-md-6 col-sm-6 " >
+                <img src="../img/productos/producto11.jpeg" class="card-img-top" alt="canastos de mimbre debajo de un sillon que esta compuesto por un almohadon rectangural el cual tambien contiene almohadones marrones y grises">
                 <div class="card-body">
                     <h5 class="card-title text-center">Cajones Mimbre</h5>
                     <p class="card-text text-center">$3.500</p>
                     <a href="../pages/ingresar.html" class="btn btn-secondary w-100">Comprar</a>
                 </div>
             </div>
-            <div class="card col-md-3 col-sm-6" style="width: 18rem;">
-                <img src="../img/productos/producto12.jpeg" class="card-img-top" alt="...">
+            <div class="card col-lg-3 col-md-6 col-sm-6 " >
+                <img src="../img/productos/producto12.jpeg" class="card-img-top" alt="set de tres cuadros de los cuales uno contine una hoja de color verde, el otro la frase inspire y el ultimo, una rama verde con cinco hojas. Al lado de la pared en el cual estan colgados los cuadros se encuentra una silla de color blanco">
                 <div class="card-body">
                     <h5 class="card-title text-center">Setx3 Cuadros</h5>
                     <p class="card-text text-center">$2.000</p>
@@ -266,7 +247,6 @@
                 </section>
         </section>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
